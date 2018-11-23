@@ -57,6 +57,8 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+  gem 'shoulda', '~> 3.6'
+  gem 'shoulda-matchers', '~> 3.1', '>= 3.1.2'
   gem 'rspec-rails', '~> 3.5'
   gem 'simplecov', require: false
   gem 'simplecov-console', require: false
