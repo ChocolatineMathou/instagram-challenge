@@ -2,13 +2,17 @@ require "rails_helper"
 
 RSpec.describe PostsController, type: :controller do
 
-  describe 'POST #create' do
-
-    it 'attaches the uploaded file' do
-      file = fixture_file_upload(Rails.root.join('public', 'apple-touch-icon.png'), 'image/png')
-      expect { post :create, params: { post: { caption: "hello", image: file } } }.to change(ActiveStorage::Attachment, :count).by(1)
+  describe "POST /" do
+    it "responds with 200" do
+      post :create, params: { post: { caption: "Hello world!" } }
+      expect(response).to redirect_to(posts_url)
     end
-
   end
 
+  describe "GET /" do
+    it "responds with 302" do
+      get :index
+      expect(response).to have_http_status(200)
+    end
+  end
 end
