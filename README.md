@@ -11,33 +11,33 @@ Ruby, Rails, RSpec, Rubocop, Travis CI
 
 ## User Stories
 
-```
 :white_check_mark:
+
+```
 As a social media addict,
 So that I can share my photographs with the world,
 I want to be able to post them.
+```
 
 :construction:
+
+```
 As a social media addict,
 So that I can claim photographs as mine,
 I want to be able to sign up.
 
-:construction:
 As a social media addict,
 So that I can come back to upload more photographs,
 I want to be able to sign in.
 
-:construction:
 As a social media addict,
 So that I want to make sure people don't use my account,
 I want to be able to sign out.
 
-:construction:
 As a social media addict,
 So that I don't want people to see ugly photographs,
 I want to be able to delete posts.
 
-:construction:
 As a social media addict,
 So that I can show to people what photographs please me,
 I want to be able to like posts.
